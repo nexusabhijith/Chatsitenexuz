@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Anon Chat</title>
+</head>
+<body style="background:black;color:lime;text-align:center;">
+<h2>Anonymous Chat</h2>
+
+<select id="gender">
+<option value="any">Any</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select>
+
+<select id="looking">
+<option value="any">Any</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select>
+
+<button onclick="startChat()">Start</button>
+
+<br><br>
+
+<video id="myVideo" autoplay muted width="150"></video>
+<video id="userVideo" autoplay width="300"></video>
+
+<div id="chat"></div>
+
+<input id="msg">
+<button onclick="sendMsg()">Send</button>
+<button onclick="nextUser()">Next</button>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="client.js"></script>
+</body>
+</html>
